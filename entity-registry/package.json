@@ -21,11 +21,10 @@
   },
   "scripts": {
     "build": "npx tsc",
-    "yalc:install": "npx yalc add @bigbyte/classpath && npx yalc add @bigbyte/IoC",
+    "yalc:install": "npx yalc add @bigbyte/classpath && npx yalc add @bigbyte/ioc",
     "yalc:publish": "npm run build && npx yalc publish --push"
   },
   "dependencies": {
-    "@bigbyte/IoC": "file:.yalc/@bigbyte/IoC",
     "@bigbyte/classpath": "file:.yalc/@bigbyte/classpath",
     "@bigbyte/ioc": "file:.yalc/@bigbyte/ioc",
     "tslib": "~2.3",
