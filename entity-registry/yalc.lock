@@ -1,0 +1,42 @@
+{
+  "version": "v1",
+  "packages": {
+    "@bigbyte/utils": {
+      "signature": "7e00aa775773013ad68e69c4f001f9ea",
+      "file": true,
+      "replaced": "file:.yalc/@bigbyte/web-utils"
+    },
+    "@bigbyte/web-utils": {
+      "signature": "fcf8acfa05b030668b12fcf698087667",
+      "file": true
+    },
+    "@bigbyte/ioc": {
+      "signature": "368dce0d4624a7eb7a4ebb4e6b7b6d32",
+      "file": true
+    },
+    "@bigbyte/ctx": {
+      "signature": "d31ec69dee7c360708461318bbae27b7",
+      "file": true
+    },
+    "@bigbyte/route-map": {
+      "signature": "4d8f9bd80be979c06e2ae9d96d489bae",
+      "file": true
+    },
+    "@bigbyte/integration": {
+      "signature": "c9e29a6d5f35ad3f403ec46d017c5279",
+      "file": true
+    },
+    "@bigbyte/events": {
+      "signature": "64042ca65bb2e531d86fc7ac829a3902",
+      "file": true
+    },
+    "@bigbyte/classpath": {
+      "signature": "01488dcd70be93639a3d630a31a6980c",
+      "file": true
+    },
+    "@bigbyte/IoC": {
+      "signature": "368dce0d4624a7eb7a4ebb4e6b7b6d32",
+      "file": true
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "@bigbyte/entity-registry",
+  "version": "0.1.0",
+  "author": "Jose Eduardo Soria Garcia <pepesoriagarcia99@gmail.com>",
+  "license": "ISC",
+  "private": false,
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      ".": [
+        "./lib/index.d.ts"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "yalc:install": "npx yalc add @bigbyte/classpath && npx yalc add @bigbyte/IoC",
+    "yalc:publish": "npm run build && npx yalc publish --push"
+  },
+  "dependencies": {
+    "@bigbyte/IoC": "file:.yalc/@bigbyte/IoC",
+    "@bigbyte/classpath": "file:.yalc/@bigbyte/classpath",
+    "@bigbyte/ioc": "file:.yalc/@bigbyte/ioc",
+    "tslib": "~2.3",
+    "zone.js": "~0.14"
+  },
+  "devDependencies": {
+    "@types/node": "~22",
+    "typescript": "~5.9"
+  }
+}
