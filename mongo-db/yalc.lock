@@ -12,6 +12,10 @@
     "@bigbyte/events": {
       "signature": "64042ca65bb2e531d86fc7ac829a3902",
       "file": true
+    },
+    "@bigbyte/classpath": {
+      "signature": "01488dcd70be93639a3d630a31a6980c",
+      "file": true
     }
   }
 }

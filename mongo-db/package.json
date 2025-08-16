@@ -1,0 +1,27 @@
+{
+  "name": "@bigbyte/mongo-db",
+  "version": "0.1.0",
+  "author": "Jose Eduardo Soria Garcia <pepesoriagarcia99@gmail.com>",
+  "license": "ISC",
+  "private": true,
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "yalc:install": "npx yalc add @bigbyte/utils && npx yalc add @bigbyte/ioc && npx yalc add @bigbyte/events && npx yalc add @bigbyte/classpath",
+    "yalc:publish": "npm run build && npx yalc publish --push"
+  },
+  "dependencies": {
+    "@bigbyte/classpath": "file:.yalc/@bigbyte/classpath",
+    "@bigbyte/events": "file:.yalc/@bigbyte/events",
+    "@bigbyte/ioc": "file:.yalc/@bigbyte/ioc",
+    "@bigbyte/utils": "file:.yalc/@bigbyte/utils",
+    "mongodb": "^6.18.0",
+    "reflect-metadata": "~0.2.2",
+    "tslib": "~2.3",
+    "zone.js": "~0.14"
+  },
+  "devDependencies": {
+    "@types/node": "~22",
+    "typescript": "~5"
+  }
+}

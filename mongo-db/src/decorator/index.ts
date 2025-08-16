@@ -81,4 +81,4 @@
 // @Projection
 // Define interfaces DTO para consultas.
 
-export * from './Connect';
+export * from './main/Mongo';
