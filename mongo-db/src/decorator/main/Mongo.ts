@@ -22,8 +22,7 @@ export const Mongo = (): ClassDecorator => {
         log.dev(`${DECORATOR_MONGO_NAME} decorator applied to ${Target.name}`);
 
         Reflect.defineMetadata(`${METADATA_DECORATOR_NAME}=${DECORATOR_MONGO_NAME}`, true, Target);
-        Reflect.defineMetadata(METADATA_CONFIGURATION, METADATA_CONFIGURATION_DATA, Target); // inicializa entity-registry
-
+        Reflect.defineMetadata(`${METADATA_CONFIGURATION}=${METADATA_CONFIGURATION_DATA}`, true, Target); // inicializa entity-registry
         executeDecorator(DECORATOR_MONGO_NAME);
     }
 }

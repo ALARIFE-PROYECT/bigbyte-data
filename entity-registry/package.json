@@ -21,12 +21,13 @@
   },
   "scripts": {
     "build": "npx tsc",
-    "yalc:install": "npx yalc add @bigbyte/classpath && npx yalc add @bigbyte/ioc",
+    "yalc:install": "npx yalc add @bigbyte/classpath && npx yalc add @bigbyte/ioc && npx yalc add @bigbyte/utils",
     "yalc:publish": "npm run build && npx yalc publish --push"
   },
   "dependencies": {
     "@bigbyte/classpath": "file:.yalc/@bigbyte/classpath",
     "@bigbyte/ioc": "file:.yalc/@bigbyte/ioc",
+    "@bigbyte/utils": "file:.yalc/@bigbyte/utils",
     "tslib": "~2.3",
     "zone.js": "~0.14"
   },

@@ -7,7 +7,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "npx tsc",
-    "yalc:install": "npx yalc add @bigbyte/utils && npx yalc add @bigbyte/ioc && npx yalc add @bigbyte/events && npx yalc add @bigbyte/classpath",
+    "yalc:install": "npx yalc add @bigbyte/utils && npx yalc add @bigbyte/ioc && npx yalc add @bigbyte/events && npx yalc add @bigbyte/classpath && npx yalc add @bigbyte/integration",
     "yalc:publish": "npm run build && npx yalc publish --push"
   },
   "dependencies": {
@@ -15,6 +15,7 @@
     "@bigbyte/events": "file:.yalc/@bigbyte/events",
     "@bigbyte/ioc": "file:.yalc/@bigbyte/ioc",
     "@bigbyte/utils": "file:.yalc/@bigbyte/utils",
+    "@bigbyte/integration": "file:.yalc/@bigbyte/integration",
     "mongodb": "^6.18.0",
     "reflect-metadata": "~0.2.2",
     "tslib": "~2.3",
