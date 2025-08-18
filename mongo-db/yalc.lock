@@ -6,7 +6,7 @@
       "file": true
     },
     "@bigbyte/ioc": {
-      "signature": "368dce0d4624a7eb7a4ebb4e6b7b6d32",
+      "signature": "dae44bd6517101e45867bfc0df4012d6",
       "file": true
     },
     "@bigbyte/events": {
@@ -15,6 +15,10 @@
     },
     "@bigbyte/classpath": {
       "signature": "01488dcd70be93639a3d630a31a6980c",
+      "file": true
+    },
+    "@bigbyte/integration": {
+      "signature": "c9e29a6d5f35ad3f403ec46d017c5279",
       "file": true
     }
   }
