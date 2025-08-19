@@ -1,5 +1,5 @@
 {
-  "name": "@bigbyte/mongo-db",
+  "name": "@bigbyte/mongodb",
   "version": "0.1.0",
   "author": "Jose Eduardo Soria Garcia <pepesoriagarcia99@gmail.com>",
   "license": "ISC",

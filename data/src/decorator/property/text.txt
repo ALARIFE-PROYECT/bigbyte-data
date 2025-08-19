@@ -1,0 +1,15 @@
+no se como hacer esto muy bien,
+
+@Column(name, options)
+
+o
+
+@Column(name)
+@Properties(options)
+
+o
+
+@Column(name)
+@MaxLength(100)
+@MinLength(10)
+....

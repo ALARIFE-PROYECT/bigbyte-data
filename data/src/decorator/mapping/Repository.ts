@@ -1,13 +1,12 @@
 /**
  * * Decorador
  * 
- * Para registrar la clase como RestController del servidor.
+ * Para registrar la clase como Repository del sistema.
  */
-
-
 import Logger from "@bigbyte/utils/logger";
-import { decoratorExecEvent, declareDecorator, executeDecorator, getDecorators, DecoratorError } from "@bigbyte/events";
+import { decoratorExecEvent, declareDecorator, executeDecorator } from "@bigbyte/events";
 import { METADATA_DECORATOR_NAME } from "@bigbyte/utils/constant";
+import { checkUniqueDecorator } from "@bigbyte/utils/utilities";
 import { ComponentType, componentRegistry } from "@bigbyte/ioc";
 
 import { DECORATOR_REPOSITORY_NAME, LIBRARY_NAME } from "../constant";
@@ -25,14 +24,10 @@ export const Repository = (): ClassDecorator => {
 
         decoratorExecEvent.on('last', () => {
             // Valida que la clase no tenga mas de un decorador
-            const keys = Reflect.getMetadataKeys(Target);
-            const decorators = getDecorators(keys);
-            if (decorators.length > 1) {
-                throw new DecoratorError(`Class ${Target.name} is decorated with ${decorators.join(', ')} and @Controller() does not allow it.`);
-            }
+            checkUniqueDecorator(Target);
 
             const paramTypes: Array<any> = Reflect.getMetadata("design:paramtypes", Target) ?? [];
-            componentRegistry.add(Target, paramTypes, { type: ComponentType.CONTROLLER, injectable: false });
+            componentRegistry.add(Target, paramTypes, { type: ComponentType.REPOSITORY, injectable: true });
         });
 
         executeDecorator(DECORATOR_REPOSITORY_NAME);
