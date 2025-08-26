@@ -30,6 +30,11 @@ class EntityRegistry {
         const initRegistry = mainClasspath.decorators.some(d => SUPPORTED_DECORATOR_NAMES.includes(d))
 
         if (initRegistry) {
+            /**
+             * TODO: modificar classpath, no estan las interfaces
+             * 
+             * TODO: modificar classpath, no marca la clase principal
+             */
             const entities = classpathService.getAll().filter(e => e.decorators.length === 0 || e.decorators.includes(DECORATOR_ENTITY_NAME));
             console.log("🚀 ~ SchemaMapRegistry ~ constructor ~ entities:", entities)
         }
