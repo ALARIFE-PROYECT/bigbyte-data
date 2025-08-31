@@ -29,7 +29,8 @@
     "@bigbyte/ioc": "file:.yalc/@bigbyte/ioc",
     "@bigbyte/utils": "file:.yalc/@bigbyte/utils",
     "tslib": "~2.3",
-    "zone.js": "~0.14"
+    "zone.js": "~0.14",
+    "reflect-metadata": "~0.2.2"
   },
   "devDependencies": {
     "@types/node": "~22",

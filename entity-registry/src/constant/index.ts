@@ -5,11 +5,6 @@
  * 
  * Por ahora se usa este array para saber si existe un decorador que debe inicializar el entity-registry.
  */
-export const SUPPORTED_DECORATOR_NAMES = [
-    '@Server',
-    '@MongoDB',
-    '@PostgreSQL',
-]
-
 export const DECORATOR_APP_NAME = '@App';
 export const DECORATOR_ENTITY_NAME = '@Entity';
+export const DECORATOR_REQUEST_BODY_NAME = '@RequestBody';
